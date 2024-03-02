@@ -29,6 +29,25 @@
 }
 
 /* header related styles */
+header>nav>div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 220px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 44px;
+  text-decoration: none;
+}
 
 .banner-section {
   background-image: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
@@ -254,6 +273,17 @@
   font-weight: 400;
 }
 
+.contact-section{
+  display: flex;
+  margin: 40px 150px;
+  gap: 20px;
+  align-items: center;
+}
+.contact-image{
+  height: 400px;
+  width: 800px;
+}
+
 .newsletter-section {
   display: flex;
   margin: 100px 300px;
@@ -323,7 +353,7 @@ footer {
   padding-top: 110px;
 }
 
-.budget-style{
+.budget-style {
   color: rgb(19, 19, 24);
   font-size: 32px;
   font-weight: 800;
@@ -337,7 +367,8 @@ footer {
   width: 40px;
   height: 46.67px;
 }
-.social-icons-div{
+
+.social-icons-div {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -349,9 +380,10 @@ footer {
   width: 40px;
   height: 40px;
 }
-.footer-last{
+
+.footer-last {
   margin-top: 50px;
-  
+
 }
 
 
@@ -361,13 +393,14 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-  .banner-inputs,
+  header>nav, .banner-inputs,
   .popular-tour-section,
   .destion-image1,
   .destination-image2,
   .destination-image3,
   .benefits-section-card,
-  .newsletter-section {
+  .newsletter-section,
+  .contact-section {
     flex-direction: column;
   }
 
@@ -394,25 +427,37 @@ footer {
     margin: 20px;
     gap: 20px;
   }
+
   .tour-header {
     font-size: 30px;
   }
+
   .benefits-section-card,
   .card3 {
     margin: 20px;
   }
+
   .newsletter-section {
     margin: 20px;
   }
+
   .travel-button {
     margin: 0px;
     margin-top: -220px;
   }
+
+  .contact-section{
+    margin: 0px 20px;
+  }
+  .contact-image{
+    width: 100%;
+  }
   .newsletter-section>div>img {
     width: 100%;
   }
-  footer{
-    width: 100%;
+
+  footer {
+    width: auto;
     padding: 0px 20px;
   }
 }
